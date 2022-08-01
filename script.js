@@ -49,14 +49,14 @@ function add(){
 function openCard(idx) {
     if (help === false) {
         
-    } else {
+    } else if(dives[idx].classList.contains('close')){
         if (first === false) {
             dives[idx].classList.remove('close')
             first = true;
             firstName = dives[idx].getAttribute('name')
             firstIdx = idx;
 
-        } else if (first === true) {
+        } else if (first === true && idx !== firstIdx) {
             dives[idx].classList.remove('close')
             second = true;
             help = false;
