@@ -27,6 +27,7 @@ body{
 	transition-duration: 1s;
 	border: 2px solid black;
 	position: relative;
+	user-select: none;
 }
 
 .card:before{
@@ -90,6 +91,7 @@ div.close:before{
 	width: 160px;
 	margin-left: calc(50% - 80px);
 	cursor: pointer;
+	user-select: none;
 }
 
 .start:hover{
